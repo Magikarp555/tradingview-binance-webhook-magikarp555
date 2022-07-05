@@ -19,6 +19,6 @@
 > ts-node src/index.ts
 
 webhook url ที่ใช้แก้จาก
-http://<ipaddress>/tradingview/<code>
+http://ipaddress/tradingview/code
 เป็น
-http://<ipaddress>/tradingview2/<code>
+http://ipaddress/tradingview2/code
