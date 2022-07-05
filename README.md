@@ -10,7 +10,7 @@
 
 > git clone https://github.com/cryptothedev/tradingview-binance-webhook-magikarp555.git
 
-> cd tradingview-binance-webhook
+> cd tradingview-binance-webhook-magikarp555
 
 5. rename .env.example to .env
 6. ตั้งค่าให้เรียบร้อย
