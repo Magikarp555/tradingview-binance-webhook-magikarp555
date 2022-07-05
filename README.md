@@ -22,7 +22,7 @@ http://ipaddress/tradingview2/code
 
 {{ticker}}_long_50_true_false_2
 
-{{ticker}}_[side]__[amount_usd]__[set_tp]__[set_sl]__[leverage]
+{{ticker}}_[side]_[amount_usd]_[set_tp]_[set_sl]_[leverage]
 
 
 
