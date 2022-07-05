@@ -2,19 +2,13 @@
 
 เอาโค้ดของเสี่ยมาโมเพิ่มเพิ่มฟังค์ชั่นนิดหน่อยครับ
 
-# TradingView Binance Webhook
-
-สำหรับห้องพักนักซิ่ง DEFI 
-
-แจกให้ใช้ฟรี ใช้แล้วถูกใจ ช่วยกันทำบุญ บริจาคให้กับอะไรก็ได้ สาธุนะเพื่อน
-
 ## วิธีใช้
 1. install nodejs
 2. install yarn
 3. install ts-node
 4. clone project
 
-> git clone https://github.com/cryptothedev/tradingview-binance-webhook.git
+> git clone https://github.com/cryptothedev/tradingview-binance-webhook-magikarp555.git
 
 > cd tradingview-binance-webhook
 
@@ -23,3 +17,8 @@
 7. run server
 
 > ts-node src/index.ts
+
+webhook url ที่ใช้แก้จาก
+http://ipaddress/tradingview/code
+เป็น
+http://ipaddress/tradingview2/code
