@@ -1,3 +1,7 @@
+# TridingView Binance Webhook extended by Magikarp555
+
+เอาโค้ดของเสี่ยมาโมเพิ่มเพิ่มฟังค์ชั่นนิดหน่อยครับ
+
 # TradingView Binance Webhook
 
 สำหรับห้องพักนักซิ่ง DEFI 
