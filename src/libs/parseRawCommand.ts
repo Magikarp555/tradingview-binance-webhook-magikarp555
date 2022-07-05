@@ -5,7 +5,7 @@ export function parseRawCommand(rawCommand: string): Command {
   const [symbol, side, amountUSD, setTp, setSl, leverage, onlyOneOrder] = rawCommand.split('_')
 
   if (
-    [symbol, side, amountUSD, setTp, setSl].some((value), leverage => value == undefined)
+    [symbol, side, amountUSD, setTp, setSl, leverage].some((value) => value == undefined)
   ) {
     throw new Error('Command is invalid')
   }
