@@ -16,7 +16,7 @@ export class Controller {
   }
 
   init() {
-    this.app.post('/tradingview/:token', async (req, res) => {
+    this.app.post('/tradingview2/:token', async (req, res) => {
       const { token } = req.params
       if (token !== this.configService.getToken()) {
         throw new Error('Token is invalid')
