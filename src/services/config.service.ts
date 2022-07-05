@@ -9,10 +9,6 @@ export class ConfigService {
     }
   }
 
-  getLeverage() {
-    return Number(process.env['LEVERAGE'])
-  }
-
   getTpPercentage() {
     return Number(process.env['TAKE_PROFIT_PERCENTAGE'])
   }

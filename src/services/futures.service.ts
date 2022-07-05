@@ -12,7 +12,7 @@ export class FuturesService {
   }
 
   async setupTrade(command: Command) {
-    const { symbol, onlyOneOrder } = command
+    const { symbol, onlyOneOrder ,leverage} = command
 
     const positionOrders = await this.getPositionOrders(command)
 
@@ -22,7 +22,7 @@ export class FuturesService {
 
     await this.cancelOpenOrders(command, positionOrders)
 
-    const leverage = this.configService.getLeverage()
+    //const leverage = this.configService.getLeverage()
     await this.client.setLeverage({ symbol, leverage })
 
     await this.client
@@ -57,8 +57,8 @@ export class FuturesService {
   }
 
   async calculateQuantity(command: Command, quantityPrecision: number) {
-    const { symbol, amountUSD } = command
-    const leverage = this.configService.getLeverage()
+    const { symbol, amountUSD, leverage } = command
+   // const leverage = this.configService.getLeverage()
 
     const { markPrice } = await this.client.getMarkPrice({
       symbol,
