@@ -14,8 +14,25 @@ http://ipaddress/tradingview/code
 เติมเลข port กับเติมเลข2ท้าย tradingview เป็น
 http://ipaddress:443/tradingview2/code
 
-## วิธี restart bot
+คำสั่ง
+{{ticker}}_short_2_50_true_false
+
+{{ticker}}_long_2_50_true_false
+
+{{ticker}}_[side]__[leverage]_[amount_usd]_[set_tp]_[set_sl]
+
+ตัวอย่าง: long/short  ตัวคูณ  จำนวนusd    true/false  true/false
+
+## 
+
+## จุดที่ต้องระวัง
+เวลาเราไปเพิ่ม alert webhook บน tradingview มันจะจำค่า url เดิมไว้ ถ้าจะกลับไปใช้ของเสี่ย ก็อย่าลืมไปแก้กลับด้วย
+
+## คำสั่งรันบอท
+> ts-node src/index.ts &
+
+## คำสั่ง หยุดบอท
 > sudo kill -9 $(sudo lsof -t -i:443)
 
-## วิธีเช็คว่าบอทรันอยู่ไหม
+## คำสั่งเช็คว่าบอทรันอยู่ไหม
 > lsof -t -i:443
