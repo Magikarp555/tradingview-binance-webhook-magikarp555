@@ -15,11 +15,13 @@ http://ipaddress/tradingview/code
 http://ipaddress/tradingview2/code
 
 คำสั่ง
-{{ticker}}_short_2_50_true_false
+{{ticker}}_short_50_true_false_2
 
-{{ticker}}_long_2_50_true_false
+{{ticker}}_long_50_true_false_2
 
-{{ticker}}_[side]__[leverage]__[amount_usd]__[set_tp]__[set_sl]
+{{ticker}}_[side]__[amount_usd]__[set_tp]__[set_sl]__[leverage]
+
+
 
 ## จุดที่ต้องระวัง
 บอทนี้รันซ้อนกับของเสี่ยไม่ได้ เนื่องจากใช้port 80 เหมือนกัน ต้องแยก account binance นะครับ
