@@ -1,6 +1,6 @@
 # TridingView Binance Webhook extended by Magikarp555
 
-เอาโค้ดของเสี่ยมาโมเพิ่มเพิ่มฟังค์ชั่นนิดหน่อยครับ สามารพรันช้อนกับของเสี่ยได้เลย
+เอาโค้ดของเสี่ยมาโมเพิ่มเพิ่มฟังค์ชั่นนิดหน่อยครับ
 
 ## วิธีติดตั้ง
 เหมือนของเสี่ยทุกอย่าง แก้เพียงแค่ตามนี้
@@ -11,28 +11,26 @@
 
 webhook url ที่ใช้แก้จาก
 http://ipaddress/tradingview/code
-เติมเลข port กับเติมเลข2ท้าย tradingview เป็น
-http://ipaddress:443/tradingview2/code
+เติมเลข2ท้าย tradingview เป็น
+http://ipaddress/tradingview2/code
 
 คำสั่ง
 {{ticker}}_short_2_50_true_false
 
 {{ticker}}_long_2_50_true_false
 
-{{ticker}}_[side]__[leverage]_[amount_usd]_[set_tp]_[set_sl]
-
-ตัวอย่าง: long/short  ตัวคูณ  จำนวนusd    true/false  true/false
-
-## 
+{{ticker}}_[side]__[leverage]__[amount_usd]__[set_tp]__[set_sl]
 
 ## จุดที่ต้องระวัง
+บอทนี้รันซ้อนกับของเสี่ยไม่ได้ เนื่องจากใช้port 80 เหมือนกัน ต้องแยก account binance นะครับ
+
 เวลาเราไปเพิ่ม alert webhook บน tradingview มันจะจำค่า url เดิมไว้ ถ้าจะกลับไปใช้ของเสี่ย ก็อย่าลืมไปแก้กลับด้วย
 
 ## คำสั่งรันบอท
 > ts-node src/index.ts &
 
 ## คำสั่ง หยุดบอท
-> sudo kill -9 $(sudo lsof -t -i:443)
+> sudo kill -9 $(sudo lsof -t -i:80)
 
 ## คำสั่งเช็คว่าบอทรันอยู่ไหม
-> lsof -t -i:443
+> lsof -t -i:80
