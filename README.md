@@ -1,6 +1,6 @@
 # TridingView Binance Webhook extended by Magikarp555
 
-เอาโค้ดของเสี่ยมาโมทะยอยเพิ่มฟังค์ชั่นครับ
+เอาโค้ดของเสี่ย Cryptothedev มาทะยอยเพิ่มฟังค์ชั่นครับ
 
 ## Function ที่เพิ่มมา
 - ปรับ leverage แยกเหรียญได้
