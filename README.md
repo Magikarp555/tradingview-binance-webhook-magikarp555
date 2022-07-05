@@ -25,9 +25,9 @@ http://ipaddress/tradingview2/code
 
 {{ticker}}_long_50_true_false_2
 
+เลข2คือleverageนะครับ
+
 {{ticker}}_[side]_amount_usd]_[set_tp]_[set_sl]_[leverage]
-
-
 
 ## จุดที่ต้องระวัง
 บอทนี้รันซ้อนกับของเสี่ยไม่ได้ เนื่องจากใช้port 80 เหมือนกัน ต้องแยก account binance นะครับ
