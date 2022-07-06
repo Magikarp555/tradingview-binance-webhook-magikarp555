@@ -88,6 +88,7 @@ export class FuturesService {
     console.log('long position opened')
 
     if (!setTp && !setSl) {
+      console.log(`not set take profit/sl`)
       return
     }
 
